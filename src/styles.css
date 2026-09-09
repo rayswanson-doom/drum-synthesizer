@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --color-bg: #0a0a0b;
+  --color-surface: #121214;
+  --color-well: #1a1a1e;
+  --color-pad: #222226;
+  --color-fg: #f4f4f5;
+  --color-muted: #8c8c93;
+  --color-subtle: #5c5c64;
+  --color-accent: #e4e4e7;
+  --color-accent-fg: #0a0a0b;
+  --color-border: #2a2a2e;
+  --color-ring: #d4d4d8;
+
+  --shadow-border: 0 0 0 1px rgb(255 255 255 / 0.08);
+  --shadow-border-hover: 0 0 0 1px rgb(255 255 255 / 0.14);
+  --shadow-lit: 0 0 18px rgb(228 228 231 / 0.2);
+
+  --text-2xs: 0.625rem;
+  --tracking-kicker: 0.18em;
+  --scale-25: 0.25;
+  --scale-96: 0.96;
+  --duration-250: 250ms;
+  --ease-out-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    min-height: 100dvh;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+}

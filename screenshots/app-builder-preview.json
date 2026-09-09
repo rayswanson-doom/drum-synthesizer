@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "LANE",
+      "hasCanvas": false,
+      "bodyTextLen": 303,
+      "bodyTextHash": "753e691be6002b61ea391cf9add70d6ca94d4a4b2df72c890c916334f4cd73b1",
+      "bodyTextPrefix": "DRUM MACHINE LANE Sixteen steps. Four lanes. Tap a pad, then pla",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "LANE",
+      "hasCanvas": false,
+      "bodyTextLen": 281,
+      "bodyTextHash": "1725b8c62ffce389afc1488cc1967d0ec1859a9dd1ec3cac6c561ba9362df1ed",
+      "bodyTextPrefix": "DRUM MACHINE LANE Sixteen steps. Four lanes. Tap a pad, then pla",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
