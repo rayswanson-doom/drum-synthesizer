@@ -6,9 +6,15 @@ import { PRESETS, type PresetId } from "@/lib/drum/patterns";
 import { useDrum } from "@/lib/drum/store";
 import { cn } from "@/lib/utils";
 
+/** Song-section order first, then legacy presets. */
 const PRESET_ORDER: PresetId[] = [
-  "viral",
-  "viral-drop",
+  "intro",
+  "groove",
+  "build",
+  "drop",
+  "half",
+  "final",
+  "outro",
   "house",
   "boom-bap",
   "break",
