@@ -6,7 +6,14 @@ import { PRESETS, type PresetId } from "@/lib/drum/patterns";
 import { useDrum } from "@/lib/drum/store";
 import { cn } from "@/lib/utils";
 
-const PRESET_ORDER: PresetId[] = ["house", "boom-bap", "break", "techno"];
+const PRESET_ORDER: PresetId[] = [
+  "viral",
+  "viral-drop",
+  "house",
+  "boom-bap",
+  "break",
+  "techno",
+];
 
 export function Transport() {
   const isPlaying = useDrum((s) => s.isPlaying);
