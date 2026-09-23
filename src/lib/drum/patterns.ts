@@ -9,7 +9,13 @@ function steps(seq: string): boolean[] {
   return cells.map((c) => c === "x" || c === "X");
 }
 
-export type PresetId = "house" | "boom-bap" | "break" | "techno";
+export type PresetId =
+  | "house"
+  | "boom-bap"
+  | "break"
+  | "techno"
+  | "viral"
+  | "viral-drop";
 
 export const PRESETS: Record<
   PresetId,
@@ -51,9 +57,39 @@ export const PRESETS: Record<
       perc: steps("---- --x- ---- x--x"),
     },
   },
+  /**
+   * Viral Trap / Phonk hybrid – designed to feel instantly shareable.
+   * Punchy bounce, classic trap snare, busy rolling hats, and cowbell-style perc.
+   * Best at 140–152 BPM with 8–18% swing.
+   * Use as verse / main groove of a short track or TikTok/Reel loop.
+   */
+  viral: {
+    label: "Viral",
+    pattern: {
+      kick: steps("x--- --x- x-x- --x-"),
+      snare: steps("---- x--- ---- x---"),
+      hats: steps("x-x- x-xx x-x- xxxx"),
+      perc: steps("--x- ---- --x- x--x"),
+    },
+  },
+  /**
+   * Higher-energy drop / chorus version of the Viral preset.
+   * More kick density, extra snare hits, full hat rolls, and denser perc.
+   * Switch to this for the hook / drop of a short song or challenge video.
+   * Same recommended tempo range (140–152 BPM).
+   */
+  "viral-drop": {
+    label: "Viral Drop",
+    pattern: {
+      kick: steps("x-x- x--x x-x- x--x"),
+      snare: steps("---- x--- x--- x---"),
+      hats: steps("xxxx xxxx xxxx xxxx"),
+      perc: steps("x-x- --x- x-x- --xx"),
+    },
+  },
 };
 
-export const DEFAULT_PRESET: PresetId = "house";
+export const DEFAULT_PRESET: PresetId = "viral";
 
 export function defaultPattern(): Pattern {
   return clonePattern(PRESETS[DEFAULT_PRESET].pattern);
